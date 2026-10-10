@@ -1,0 +1,32 @@
+:root{--blue:#7a3fd1;--navy:#3b1f63;--bg:#f7f3fb;--card:#fff;--ink:#0f1b2d;--muted:#5b6678;--line:#e1e7f0;--soft:#f1e9fb;}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI","Noto Sans Bengali",Roboto,sans-serif;
+     background:var(--bg);color:var(--ink);line-height:1.8;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 60px;}
+header{background:linear-gradient(135deg,#3b1f63,#8a4fd8);color:#fff;border-radius:20px;padding:28px 24px;margin-bottom:10px;}
+header h1{margin:0 0 6px;font-size:23px;font-weight:800;}
+header .sub{opacity:.93;font-size:14px;}
+.meta{font-size:12.5px;color:var(--muted);margin:14px 2px 20px;}
+.summary{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:20px;font-size:15px;}
+.bn{color:var(--muted);font-size:14px;margin-top:8px;}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px;}
+section h2{margin:0 0 10px;font-size:17px;color:var(--navy);}
+ul{margin:0;padding-left:20px;}
+li{margin:7px 0;font-size:15px;}
+a{color:var(--blue);}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:6px;}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px;}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line);}
+th{color:var(--navy);font-weight:700;white-space:nowrap;}
+code{background:rgba(122,63,209,.10);padding:1px 5px;border-radius:5px;font-size:12.5px;}
+.contact{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:20px;font-size:14.5px;}
+.links{display:grid;gap:12px;margin-top:6px;}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink);font-weight:700;}
+.links a span{display:block;font-weight:400;color:var(--muted);font-size:14px;}
+footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:26px;}
+@media(prefers-color-scheme:dark){
+  :root{--bg:#140d1f;--card:#1f1530;--ink:#f1eaf8;--muted:#b0a2c2;--line:#33264a;--soft:#241838;}
+  section h2,th{color:#c9a6ff;}
+  a{color:#c9a6ff;}
+  code{background:rgba(201,166,255,.14);}
+}
